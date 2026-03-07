@@ -4,9 +4,6 @@ Interactive slide deck covering LangGraph's graph-based execution model, state m
 
 ## ▶ [Open Presentation](https://brendanjameslynskey.github.io/Introduction_to_LangGraph/index.html)
 
-> Open `index.html` locally in any browser — no build step, no npm, works offline after first load.
-> To serve via GitHub Pages: Settings → Pages → Deploy from `main` branch, `/ (root)` directory.
-
 ---
 
 ## Contents
