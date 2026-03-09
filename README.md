@@ -2,7 +2,7 @@
 
 Interactive slide deck covering LangGraph's graph-based execution model, state management, persistence, and multi-agent patterns.
 
-## ▶ [Open Presentation](https://brendanjameslynskey.github.io/Introduction_to_LangGraph/index.html)
+## ▶ [Open Presentation](https://brendanjameslynskey.github.io/Introduction_to_LangGraph/)
 
 ---
 
