@@ -29,33 +29,33 @@
 
   .reveal { font-family: 'DM Sans', sans-serif; color: var(--text); }
   .reveal h1, .reveal h2, .reveal h3 { font-family: 'Playfair Display', serif; font-weight: 700; }
-  .reveal h1 { font-size: 2.0em; color: var(--amber); line-height: 1.1; }
-  .reveal h2 { font-size: 1.35em; color: var(--amber); margin-bottom: .3em; }
-  .reveal h3 { font-size: .92em; color: var(--green); margin-bottom: .2em; }
-  .reveal p  { font-size: .68em; line-height: 1.5; color: var(--text); }
-  .reveal li { font-size: .66em; line-height: 1.5; margin-bottom: .15em; }
-  .reveal code { font-family: 'JetBrains Mono', monospace; font-size: .74em; }
+  .reveal h1 { font-size: 1.6em; color: var(--amber); line-height: 1.1; }
+  .reveal h2 { font-size: 1.1em; color: var(--amber); margin-bottom: .2em; }
+  .reveal h3 { font-size: .78em; color: var(--green); margin-bottom: .15em; }
+  .reveal p  { font-size: .56em; line-height: 1.45; color: var(--text); }
+  .reveal li { font-size: .54em; line-height: 1.45; margin-bottom: .1em; }
+  .reveal code { font-family: 'JetBrains Mono', monospace; font-size: .72em; }
   .reveal pre  { box-shadow: none; background: var(--bg3); border: 1px solid var(--border);
-                 border-radius: 6px; padding: .4em .7em; margin: .35em 0; }
-  .reveal pre code { font-size: .62em; line-height: 1.4; background: transparent; color: #cdd6f4; }
+                 border-radius: 6px; padding: .3em .5em; margin: .25em 0; }
+  .reveal pre code { font-size: .52em; line-height: 1.35; background: transparent; color: #cdd6f4; }
 
   /* ── slide chrome ── */
   .slide-hdr {
-    display: flex; align-items: center; gap: .5em;
+    display: flex; align-items: center; gap: .4em;
     border-bottom: 1px solid var(--border);
-    padding-bottom: .25em; margin-bottom: .4em;
+    padding-bottom: .2em; margin-bottom: .3em;
   }
   .slide-hdr .tag {
     font-family: 'JetBrains Mono', monospace;
-    font-size: .5em; font-weight: 500;
+    font-size: .42em; font-weight: 500;
     color: var(--bg); background: var(--amber);
-    padding: .12em .45em; border-radius: 3px;
+    padding: .1em .4em; border-radius: 3px;
     letter-spacing: .04em;
   }
-  .slide-hdr h2 { margin: 0; font-size: 1.15em; }
+  .slide-hdr h2 { margin: 0; font-size: .95em; }
 
   /* ── two-column ── */
-  .cols   { display: grid; gap: .8em; }
+  .cols   { display: grid; gap: .5em; }
   .cols-2 { grid-template-columns: 1fr 1fr; }
   .cols-3 { grid-template-columns: 1fr 1fr 1fr; }
   .cols-6040 { grid-template-columns: 6fr 4fr; }
@@ -64,23 +64,23 @@
   /* ── cards ── */
   .card {
     background: var(--bg2); border: 1px solid var(--border);
-    border-radius: 8px; padding: .5em .8em;
+    border-radius: 6px; padding: .35em .6em;
   }
   .card.amber { border-left: 3px solid var(--amber); }
   .card.green { border-left: 3px solid var(--green); }
   .card.purple{ border-left: 3px solid var(--purple); }
   .card.blue  { border-left: 3px solid var(--blue); }
   .card.red   { border-left: 3px solid var(--red); }
-  .card h3 { font-size: .78em; margin: 0 0 .2em; }
-  .card p  { font-size: .64em; margin: 0; color: #b8b8d0; }
-  .card ul { margin: 0; padding-left: 1.2em; }
-  .card li { font-size: .64em; color: #b8b8d0; margin-bottom: .05em; }
+  .card h3 { font-size: .64em; margin: 0 0 .12em; }
+  .card p  { font-size: .52em; margin: 0; color: #b8b8d0; }
+  .card ul { margin: 0; padding-left: 1em; }
+  .card li { font-size: .52em; color: #b8b8d0; margin-bottom: .02em; }
 
   /* ── table ── */
-  .reveal table { width: 100%; border-collapse: collapse; font-size: .62em; }
+  .reveal table { width: 100%; border-collapse: collapse; font-size: .5em; }
   .reveal table th { background: var(--bg3); color: var(--amber); font-weight: 600;
-                     padding: .3em .5em; border: 1px solid var(--border); text-align: left; }
-  .reveal table td { padding: .25em .5em; border: 1px solid var(--border); color: #ccc; }
+                     padding: .2em .4em; border: 1px solid var(--border); text-align: left; }
+  .reveal table td { padding: .18em .4em; border: 1px solid var(--border); color: #ccc; }
   .reveal table tr:nth-child(even) td { background: #0e0e18; }
 
   /* ── accent spans ── */
@@ -97,33 +97,28 @@
   /* ── pill badges ── */
   .pill {
     display: inline-block; font-family: 'JetBrains Mono', monospace;
-    font-size: .52em; padding: .1em .45em; border-radius: 99px;
-    border: 1px solid; margin: 0 .1em;
+    font-size: .44em; padding: .08em .4em; border-radius: 99px;
+    border: 1px solid; margin: 0 .08em;
   }
   .pill.amber { color: var(--amber); border-color: var(--amber); }
   .pill.green { color: var(--green); border-color: var(--green); }
   .pill.purple{ color: var(--purple); border-color: var(--purple); }
   .pill.blue  { color: var(--blue); border-color: var(--blue); }
 
-  /* ── footer ── */
-  .reveal .slide-footer {
-    text-align: right;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: .4em; color: var(--muted); letter-spacing: .05em;
-    margin-top: auto; padding-top: .4em;
-  }
+  /* ── footer — hidden; was overlapping scrollable content ── */
+  .reveal .slide-footer { display: none; }
   /* title slide special */
-  .title-slide h1 { font-size: 2.2em; }
+  .title-slide h1 { font-size: 1.8em; }
   .title-slide .subtitle {
-    font-size: .82em; color: var(--green); font-family: 'DM Sans', sans-serif;
-    font-weight: 300; letter-spacing: .04em; margin: .4em 0 .8em;
+    font-size: .7em; color: var(--green); font-family: 'DM Sans', sans-serif;
+    font-weight: 300; letter-spacing: .04em; margin: .3em 0 .6em;
   }
-  .title-slide .meta { font-size: .58em; color: var(--muted); font-family: 'JetBrains Mono', monospace; }
+  .title-slide .meta { font-size: .48em; color: var(--muted); font-family: 'JetBrains Mono', monospace; }
 
   /* ── super-step animator ── */
   .ss-row {
-    display: flex; gap: .3em; align-items: center;
-    margin: .15em 0; font-size: .65em; font-family: 'JetBrains Mono', monospace;
+    display: flex; gap: .25em; align-items: center;
+    margin: .1em 0; font-size: .55em; font-family: 'JetBrains Mono', monospace;
   }
   .ss-node {
     padding: .2em .55em; border-radius: 5px; font-size: .9em;
@@ -135,7 +130,7 @@
   .ss-label { font-size: .8em; color: var(--muted); margin-left: .3em; }
 
   /* reduce default margins */
-  .reveal ul, .reveal ol { margin: .2em 0 .2em 1.2em; }
+  .reveal ul, .reveal ol { margin: .15em 0 .15em 1em; }
 .reveal .slides > section { display: flex !important; flex-direction: column !important; overflow-y: auto !important; align-items: stretch !important; justify-content: flex-start !important; }
 </style>
 </head>
@@ -146,7 +141,7 @@
 <!-- ═══════════════════════════════ SLIDE 01 — TITLE ═══════════════════════════════ -->
 <section class="title-slide" data-background-color="#0a0a0f">
   <div style="text-align:left; max-width:820px; margin:0 auto; padding: 1em 0;">
-    <div style="font-family:'JetBrains Mono',monospace; font-size:.65em; color:var(--muted); margin-bottom:.6em; letter-spacing:.1em;">
+    <div style="font-family:'JetBrains Mono',monospace; font-size:.5em; color:var(--muted); margin-bottom:.4em; letter-spacing:.1em;">
       TECHNICAL REPORT
     </div>
     <h1>LangGraph</h1>
@@ -158,7 +153,7 @@
       <span class="pill purple">Persistence</span>
       <span class="pill blue">Human-in-the-Loop</span>
     </div>
-    <p style="max-width:620px; color:#a0a0c0; font-size:.82em; line-height:1.7;">
+    <p style="max-width:620px; color:#a0a0c0; font-size:.56em; line-height:1.5;">
       LangGraph is an MIT-licensed Python (and TypeScript) library for building long-running,
       stateful agent workflows as directed, potentially cyclic graphs — addressing the
       fundamental limitations of linear chain-based LLM orchestration.
@@ -545,7 +540,7 @@ app = graph.compile()</code></pre>
         <p>Async generator emitting fine-grained lifecycle events
            — token streaming from LLM nodes, tool start/end, etc.</p>
       </div>
-      <p style="font-size:.62em; color:var(--muted);">
+      <p style="font-size:.5em; color:var(--muted);">
         The compiled graph is <em>immutable</em> — runtime modifications that could
         destabilise execution are prevented by design.
       </p>
@@ -696,7 +691,7 @@ app.invoke(
       <p>A central LLM node decides which specialised sub-agent to invoke next.
          Each sub-agent is a compiled subgraph registered as a node in the parent graph.
          Common in tool-heavy research or coding pipelines.</p>
-      <pre style="margin-top:.4em;"><code style="font-size:.68em;">supervisor → agent_A
+      <pre style="margin-top:.4em;"><code style="font-size:.52em;">supervisor → agent_A
 supervisor → agent_B
 agent_A   → supervisor  # report back
 agent_B   → supervisor</code></pre>
@@ -707,7 +702,7 @@ agent_B   → supervisor</code></pre>
          <code>Command(goto="agent_B")</code> without a central coordinator.
          LangGraph's <code>Send</code> API enables dynamic dispatch of sub-tasks
          to whichever peer is best placed to handle them.</p>
-      <pre style="margin-top:.4em;"><code style="font-size:.68em;">agent_A → agent_B
+      <pre style="margin-top:.4em;"><code style="font-size:.52em;">agent_A → agent_B
 agent_B → agent_C
 agent_C → agent_A  # or END</code></pre>
     </div>
@@ -716,7 +711,7 @@ agent_C → agent_A  # or END</code></pre>
       <p>A fan-out edge spawns N parallel worker agents (via <code>Send</code>);
          a downstream aggregator node merges their outputs using a list-append reducer.
          Suits parallel web search or document analysis.</p>
-      <pre style="margin-top:.4em;"><code style="font-size:.68em;">plan → Send("worker", s0)
+      <pre style="margin-top:.4em;"><code style="font-size:.52em;">plan → Send("worker", s0)
 plan → Send("worker", s1)
 plan → Send("worker", s2)
 worker → aggregate</code></pre>
@@ -838,7 +833,7 @@ langgraph up --port 8000</code></pre>
     <span class="tag">12</span>
     <h2>Framework Comparison</h2>
   </div>
-  <table style="font-size:.58em;">
+  <table style="font-size:.48em;">
     <tr>
       <th>Feature</th>
       <th>LangGraph</th>
@@ -1043,7 +1038,7 @@ state = app.invoke(
 # state["__interrupt__"] signals pending approval
 # after human approval:
 app.invoke(Command(resume=True), config=cfg)</code></pre>
-      <p style="font-size:.6em; color:var(--muted); margin-top:.3em;">
+      <p style="font-size:.48em; color:var(--muted); margin-top:.2em;">
         This pattern — under 40 lines — captures the full LangGraph capability surface:
         typed state, reducers, conditional edges, cyclic execution, checkpointing,
         and human-in-the-loop interrupts.
@@ -1309,7 +1304,7 @@ def risky_action(state: State) -> dict:
     </div>
     <div>
       <h3>References</h3>
-      <p style="font-size:.6em; color:#8888a8; line-height:1.6;">
+      <p style="font-size:.48em; color:#8888a8; line-height:1.5;">
         LangGraph Documentation — <em>docs.langchain.com</em><br>
         LangGraph GitHub — <em>github.com/langchain-ai/langgraph</em><br>
         Malewicz et al., "Pregel: A System for Large-Scale Graph Processing," SIGMOD 2010<br>
