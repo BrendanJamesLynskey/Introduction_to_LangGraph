@@ -29,33 +29,33 @@
 
   .reveal { font-family: 'DM Sans', sans-serif; color: var(--text); }
   .reveal h1, .reveal h2, .reveal h3 { font-family: 'Playfair Display', serif; font-weight: 700; }
-  .reveal h1 { font-size: 2.4em; color: var(--amber); line-height: 1.15; }
-  .reveal h2 { font-size: 1.7em; color: var(--amber); margin-bottom: .4em; }
-  .reveal h3 { font-size: 1.1em; color: var(--green); margin-bottom: .3em; }
-  .reveal p  { font-size: .82em; line-height: 1.65; color: var(--text); }
-  .reveal li { font-size: .80em; line-height: 1.65; margin-bottom: .2em; }
-  .reveal code { font-family: 'JetBrains Mono', monospace; font-size: .78em; }
+  .reveal h1 { font-size: 2.0em; color: var(--amber); line-height: 1.1; }
+  .reveal h2 { font-size: 1.35em; color: var(--amber); margin-bottom: .3em; }
+  .reveal h3 { font-size: .92em; color: var(--green); margin-bottom: .2em; }
+  .reveal p  { font-size: .68em; line-height: 1.5; color: var(--text); }
+  .reveal li { font-size: .66em; line-height: 1.5; margin-bottom: .15em; }
+  .reveal code { font-family: 'JetBrains Mono', monospace; font-size: .74em; }
   .reveal pre  { box-shadow: none; background: var(--bg3); border: 1px solid var(--border);
-                 border-radius: 6px; padding: .6em .9em; margin: .5em 0; }
-  .reveal pre code { font-size: .72em; line-height: 1.5; background: transparent; color: #cdd6f4; }
+                 border-radius: 6px; padding: .4em .7em; margin: .35em 0; }
+  .reveal pre code { font-size: .62em; line-height: 1.4; background: transparent; color: #cdd6f4; }
 
   /* ── slide chrome ── */
   .slide-hdr {
-    display: flex; align-items: center; gap: .6em;
+    display: flex; align-items: center; gap: .5em;
     border-bottom: 1px solid var(--border);
-    padding-bottom: .35em; margin-bottom: .6em;
+    padding-bottom: .25em; margin-bottom: .4em;
   }
   .slide-hdr .tag {
     font-family: 'JetBrains Mono', monospace;
-    font-size: .55em; font-weight: 500;
+    font-size: .5em; font-weight: 500;
     color: var(--bg); background: var(--amber);
-    padding: .15em .5em; border-radius: 3px;
+    padding: .12em .45em; border-radius: 3px;
     letter-spacing: .04em;
   }
-  .slide-hdr h2 { margin: 0; font-size: 1.3em; }
+  .slide-hdr h2 { margin: 0; font-size: 1.15em; }
 
   /* ── two-column ── */
-  .cols   { display: grid; gap: 1.2em; }
+  .cols   { display: grid; gap: .8em; }
   .cols-2 { grid-template-columns: 1fr 1fr; }
   .cols-3 { grid-template-columns: 1fr 1fr 1fr; }
   .cols-6040 { grid-template-columns: 6fr 4fr; }
@@ -64,23 +64,23 @@
   /* ── cards ── */
   .card {
     background: var(--bg2); border: 1px solid var(--border);
-    border-radius: 8px; padding: .8em 1em;
+    border-radius: 8px; padding: .5em .8em;
   }
   .card.amber { border-left: 3px solid var(--amber); }
   .card.green { border-left: 3px solid var(--green); }
   .card.purple{ border-left: 3px solid var(--purple); }
   .card.blue  { border-left: 3px solid var(--blue); }
   .card.red   { border-left: 3px solid var(--red); }
-  .card h3 { font-size: .9em; margin: 0 0 .3em; }
-  .card p  { font-size: .76em; margin: 0; color: #b8b8d0; }
+  .card h3 { font-size: .78em; margin: 0 0 .2em; }
+  .card p  { font-size: .64em; margin: 0; color: #b8b8d0; }
   .card ul { margin: 0; padding-left: 1.2em; }
-  .card li { font-size: .76em; color: #b8b8d0; margin-bottom: .1em; }
+  .card li { font-size: .64em; color: #b8b8d0; margin-bottom: .05em; }
 
   /* ── table ── */
-  .reveal table { width: 100%; border-collapse: collapse; font-size: .74em; }
+  .reveal table { width: 100%; border-collapse: collapse; font-size: .62em; }
   .reveal table th { background: var(--bg3); color: var(--amber); font-weight: 600;
-                     padding: .45em .7em; border: 1px solid var(--border); text-align: left; }
-  .reveal table td { padding: .4em .7em; border: 1px solid var(--border); color: #ccc; }
+                     padding: .3em .5em; border: 1px solid var(--border); text-align: left; }
+  .reveal table td { padding: .25em .5em; border: 1px solid var(--border); color: #ccc; }
   .reveal table tr:nth-child(even) td { background: #0e0e18; }
 
   /* ── accent spans ── */
@@ -97,7 +97,7 @@
   /* ── pill badges ── */
   .pill {
     display: inline-block; font-family: 'JetBrains Mono', monospace;
-    font-size: .6em; padding: .1em .5em; border-radius: 99px;
+    font-size: .52em; padding: .1em .45em; border-radius: 99px;
     border: 1px solid; margin: 0 .1em;
   }
   .pill.amber { color: var(--amber); border-color: var(--amber); }
@@ -107,22 +107,23 @@
 
   /* ── footer ── */
   .reveal .slide-footer {
-    position: absolute; bottom: .6em; right: 1.2em;
+    text-align: right;
     font-family: 'JetBrains Mono', monospace;
-    font-size: .45em; color: var(--muted); letter-spacing: .05em;
+    font-size: .4em; color: var(--muted); letter-spacing: .05em;
+    margin-top: auto; padding-top: .4em;
   }
   /* title slide special */
-  .title-slide h1 { font-size: 2.6em; }
+  .title-slide h1 { font-size: 2.2em; }
   .title-slide .subtitle {
-    font-size: .95em; color: var(--green); font-family: 'DM Sans', sans-serif;
-    font-weight: 300; letter-spacing: .04em; margin: .5em 0 1.2em;
+    font-size: .82em; color: var(--green); font-family: 'DM Sans', sans-serif;
+    font-weight: 300; letter-spacing: .04em; margin: .4em 0 .8em;
   }
-  .title-slide .meta { font-size: .68em; color: var(--muted); font-family: 'JetBrains Mono', monospace; }
+  .title-slide .meta { font-size: .58em; color: var(--muted); font-family: 'JetBrains Mono', monospace; }
 
   /* ── super-step animator ── */
   .ss-row {
-    display: flex; gap: .4em; align-items: center;
-    margin: .25em 0; font-size: .75em; font-family: 'JetBrains Mono', monospace;
+    display: flex; gap: .3em; align-items: center;
+    margin: .15em 0; font-size: .65em; font-family: 'JetBrains Mono', monospace;
   }
   .ss-node {
     padding: .2em .55em; border-radius: 5px; font-size: .9em;
@@ -134,8 +135,8 @@
   .ss-label { font-size: .8em; color: var(--muted); margin-left: .3em; }
 
   /* reduce default margins */
-  .reveal ul, .reveal ol { margin: .25em 0 .25em 1.2em; }
-.reveal .slides > section { overflow-y: auto !important; align-items: flex-start !important; justify-content: flex-start !important; }
+  .reveal ul, .reveal ol { margin: .2em 0 .2em 1.2em; }
+.reveal .slides > section { display: flex !important; flex-direction: column !important; overflow-y: auto !important; align-items: stretch !important; justify-content: flex-start !important; }
 </style>
 </head>
 <body>
@@ -151,7 +152,7 @@
     <h1>LangGraph</h1>
     <div class="subtitle">Stateful Agent Orchestration as Directed Graphs</div>
     <div style="width:60px; height:3px; background:var(--amber); margin-bottom:1.4em;"></div>
-    <div style="display:flex; gap:1.4em; flex-wrap:wrap; margin-bottom:1.6em;">
+    <div style="display:flex; gap:1.2em; flex-wrap:wrap; margin-bottom:1em;">
       <span class="pill amber">Graph Execution</span>
       <span class="pill green">State Management</span>
       <span class="pill purple">Persistence</span>
@@ -544,7 +545,7 @@ app = graph.compile()</code></pre>
         <p>Async generator emitting fine-grained lifecycle events
            — token streaming from LLM nodes, tool start/end, etc.</p>
       </div>
-      <p style="font-size:.74em; color:var(--muted);">
+      <p style="font-size:.62em; color:var(--muted);">
         The compiled graph is <em>immutable</em> — runtime modifications that could
         destabilise execution are prevented by design.
       </p>
@@ -837,7 +838,7 @@ langgraph up --port 8000</code></pre>
     <span class="tag">12</span>
     <h2>Framework Comparison</h2>
   </div>
-  <table style="font-size:.72em;">
+  <table style="font-size:.58em;">
     <tr>
       <th>Feature</th>
       <th>LangGraph</th>
@@ -1042,7 +1043,7 @@ state = app.invoke(
 # state["__interrupt__"] signals pending approval
 # after human approval:
 app.invoke(Command(resume=True), config=cfg)</code></pre>
-      <p style="font-size:.72em; color:var(--muted); margin-top:.4em;">
+      <p style="font-size:.6em; color:var(--muted); margin-top:.3em;">
         This pattern — under 40 lines — captures the full LangGraph capability surface:
         typed state, reducers, conditional edges, cyclic execution, checkpointing,
         and human-in-the-loop interrupts.
@@ -1052,10 +1053,230 @@ app.invoke(Command(resume=True), config=cfg)</code></pre>
   <div class="slide-footer">LangGraph · Stateful Agent Orchestration</div>
 </section>
 
-<!-- ═══════════════════════════ SLIDE 16 — SUMMARY ═══════════════════════════ -->
+<!-- ═══════════════════════════ SLIDE 16 — TYPESCRIPT: INTRO ═══════════════════════════ -->
 <section data-background-color="#0a0a0f">
   <div class="slide-hdr">
     <span class="tag">15</span>
+    <h2>LangGraph.js — TypeScript Support</h2>
+  </div>
+  <div class="cols cols-2">
+    <div>
+      <p>LangGraph ships a first-class <span class="a">TypeScript / JavaScript</span> SDK
+         (<code>@langchain/langgraph</code>) with API parity to the Python version.
+         The same graph primitives — state, nodes, edges, checkpointers — work identically.</p>
+      <h3>Installation</h3>
+      <pre><code class="language-bash">npm install @langchain/langgraph @langchain/core
+# or
+yarn add @langchain/langgraph @langchain/core</code></pre>
+      <h3 style="margin-top:.5em;">State Definition (Annotation API)</h3>
+      <p>TypeScript uses an <span class="g">Annotation</span> builder instead of
+         Python's <code>TypedDict</code>. Reducers are declared inline.</p>
+      <pre><code class="language-typescript">import { Annotation } from "@langchain/langgraph";
+import { BaseMessage } from "@langchain/core/messages";
+
+const AgentState = Annotation.Root({
+  messages: Annotation&lt;BaseMessage[]&gt;({
+    reducer: (curr, update) => [...curr, ...update],
+    default: () => [],
+  }),
+  iteration: Annotation&lt;number&gt;({
+    reducer: (_curr, update) => update,
+    default: () => 0,
+  }),
+});</code></pre>
+    </div>
+    <div>
+      <h3>Graph Construction</h3>
+      <pre><code class="language-typescript">import { StateGraph, START, END } from "@langchain/langgraph";
+import { ToolNode } from "@langchain/langgraph/prebuilt";
+
+const graph = new StateGraph(AgentState)
+  .addNode("reason", callLlm)
+  .addNode("act", new ToolNode(tools))
+  .addEdge(START, "reason")
+  .addEdge("act", "reason")
+  .addConditionalEdges("reason", shouldContinue, {
+    continue: "act",
+    end: END,
+  });
+
+const app = graph.compile();</code></pre>
+      <h3 style="margin-top:.5em;">Node Implementation</h3>
+      <pre><code class="language-typescript">async function callLlm(
+  state: typeof AgentState.State
+) {
+  const response = await llmWithTools.invoke(
+    state.messages
+  );
+  return {
+    messages: [response],
+    iteration: state.iteration + 1,
+  };
+}
+
+function shouldContinue(
+  state: typeof AgentState.State
+): string {
+  const last = state.messages[state.messages.length - 1];
+  return last.tool_calls?.length ? "continue" : "end";
+}</code></pre>
+    </div>
+  </div>
+  <div class="slide-footer">LangGraph · Stateful Agent Orchestration</div>
+</section>
+
+<!-- ═══════════════════════════ SLIDE 17 — TYPESCRIPT: ADVANCED ═══════════════════════════ -->
+<section data-background-color="#0a0a0f">
+  <div class="slide-hdr">
+    <span class="tag">16</span>
+    <h2>TypeScript — Streaming, Persistence &amp; Deployment</h2>
+  </div>
+  <div class="cols cols-2">
+    <div>
+      <h3>Streaming (Token-Level)</h3>
+      <pre><code class="language-typescript">const stream = await app.stream(
+  { messages: [new HumanMessage("Research AI")] },
+  { configurable: { thread_id: "t1" },
+    streamMode: "messages" }
+);
+
+for await (const [message, metadata] of stream) {
+  if (message.content) {
+    process.stdout.write(String(message.content));
+  }
+}</code></pre>
+      <h3 style="margin-top:.5em;">Checkpointing</h3>
+      <pre><code class="language-typescript">import { MemorySaver } from "@langchain/langgraph";
+
+const memory = new MemorySaver();
+const app = graph.compile({
+  checkpointer: memory,
+  interruptBefore: ["act"],
+});
+
+// Resume after human approval
+await app.invoke(
+  { messages: [] },   // empty — resumes from checkpoint
+  { configurable: { thread_id: "t1" } }
+);</code></pre>
+    </div>
+    <div>
+      <h3>Full ReAct Agent (TypeScript)</h3>
+      <pre><code class="language-typescript">import { ChatOpenAI } from "@langchain/openai";
+import { createReactAgent } from
+  "@langchain/langgraph/prebuilt";
+import { TavilySearchResults } from
+  "@langchain/community/tools/tavily_search";
+
+const llm = new ChatOpenAI({ model: "gpt-4o" });
+const tools = [new TavilySearchResults()];
+
+const agent = createReactAgent({
+  llm,
+  tools,
+});
+
+const result = await agent.invoke({
+  messages: [
+    { role: "user", content: "What is LangGraph?" }
+  ],
+});</code></pre>
+      <h3 style="margin-top:.5em;">Deployment</h3>
+      <div class="card amber" style="margin-bottom:.3em;">
+        <h3>LangGraph Platform</h3>
+        <p>TypeScript graphs deploy to LangGraph Platform identically to Python.
+           Use <code>langgraph.json</code> to point at your TS entrypoint.</p>
+      </div>
+      <div class="card blue">
+        <h3>Self-Hosted (Express / Next.js)</h3>
+        <p>The compiled graph is a plain async function — wrap it in any Node.js
+           server framework. Stream via SSE or WebSockets.</p>
+      </div>
+    </div>
+  </div>
+  <div class="slide-footer">LangGraph · Stateful Agent Orchestration</div>
+</section>
+
+<!-- ═══════════════════════════ SLIDE 18 — MORE CODE EXAMPLES ═══════════════════════════ -->
+<section data-background-color="#0a0a0f">
+  <div class="slide-hdr">
+    <span class="tag">17</span>
+    <h2>Code Examples — Advanced Patterns</h2>
+  </div>
+  <div class="cols cols-2">
+    <div>
+      <h3>Custom Reducer (Python)</h3>
+      <pre><code class="language-python">from typing import Annotated
+
+def merge_dicts(current: dict, update: dict) -> dict:
+    """Deep merge — update wins on conflict."""
+    return {**current, **update}
+
+class ResearchState(TypedDict):
+    messages: Annotated[list, add_messages]
+    findings: Annotated[dict, merge_dicts]
+    sources:  Annotated[list, lambda a, b: a + b]</code></pre>
+
+      <h3 style="margin-top:.5em;">Scatter-Gather (Python)</h3>
+      <pre><code class="language-python">from langgraph.types import Send
+
+def fan_out(state: State) -> list[Send]:
+    """Dispatch one worker per query."""
+    return [
+        Send("search_worker", {"query": q})
+        for q in state["queries"]
+    ]
+
+graph.add_conditional_edges(
+    "planner", fan_out
+)
+graph.add_edge("search_worker", "aggregator")</code></pre>
+    </div>
+    <div>
+      <h3>Supervisor Multi-Agent (Python)</h3>
+      <pre><code class="language-python">def supervisor(state: State) -> dict:
+    """Central LLM decides which agent to call."""
+    response = llm.invoke([
+        SystemMessage("Route to: researcher, "
+                      "coder, or FINISH"),
+        *state["messages"]
+    ])
+    return {"next_agent": response.content}
+
+graph = StateGraph(State)
+graph.add_node("supervisor", supervisor)
+graph.add_node("researcher", research_agent)
+graph.add_node("coder", coding_agent)
+
+graph.add_conditional_edges("supervisor",
+    lambda s: s["next_agent"],
+    {"researcher": "researcher",
+     "coder": "coder",
+     "FINISH": END})
+graph.add_edge("researcher", "supervisor")
+graph.add_edge("coder", "supervisor")</code></pre>
+
+      <h3 style="margin-top:.5em;">Dynamic interrupt() (Python)</h3>
+      <pre><code class="language-python">from langgraph.types import interrupt
+
+def risky_action(state: State) -> dict:
+    approval = interrupt({
+        "action": "delete_file",
+        "path": state["target_path"],
+    })
+    if not approval.get("approved"):
+        return {"messages": [AIMessage("Aborted.")]}
+    # proceed with action...
+    return {"messages": [AIMessage("Done.")]}</code></pre>
+    </div>
+  </div>
+  <div class="slide-footer">LangGraph · Stateful Agent Orchestration</div>
+</section>
+
+<!-- ═══════════════════════════ SLIDE 19 — SUMMARY ═══════════════════════════ -->
+<section data-background-color="#0a0a0f">
+  <div class="slide-hdr">
+    <span class="tag">18</span>
     <h2>Summary</h2>
   </div>
   <div class="cols cols-3" style="margin-bottom:.8em;">
@@ -1088,7 +1309,7 @@ app.invoke(Command(resume=True), config=cfg)</code></pre>
     </div>
     <div>
       <h3>References</h3>
-      <p style="font-size:.72em; color:#8888a8; line-height:1.7;">
+      <p style="font-size:.6em; color:#8888a8; line-height:1.6;">
         LangGraph Documentation — <em>docs.langchain.com</em><br>
         LangGraph GitHub — <em>github.com/langchain-ai/langgraph</em><br>
         Malewicz et al., "Pregel: A System for Large-Scale Graph Processing," SIGMOD 2010<br>
@@ -1117,7 +1338,7 @@ Reveal.initialize({
   center: false,
   width: 1100,
   height: 900,
-  margin: 0.02,
+  margin: 0.01,
   plugins: [RevealHighlight],
   highlight: { theme: 'monokai' }
 });
