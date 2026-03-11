@@ -1,12 +1,56 @@
 # LangGraph — Stateful Agent Orchestration
 
-Interactive slide deck covering LangGraph's graph-based execution model, state management, persistence, and multi-agent patterns.
+Interactive slide deck and hands-on code examples covering LangGraph's graph-based execution model, state management, persistence, and multi-agent patterns.
 
 ## ▶ [Open Presentation](https://brendanjameslynskey.github.io/Introduction_to_LangGraph/)
 
 ---
 
-## Contents
+## Code Examples
+
+Ten runnable examples (5 Python, 5 TypeScript) that progressively introduce LangGraph's core concepts. Each example is self-contained, well-commented, and requires no LLM API key.
+
+### Python (`examples/python/`)
+
+| # | File | Concept |
+|---|------|---------|
+| 1 | [`01_simple_graph.py`](examples/python/01_simple_graph.py) | Sequential graph — state schema, nodes, edges, compile & invoke |
+| 2 | [`02_conditional_edges.py`](examples/python/02_conditional_edges.py) | Conditional branching — routing function picks the next node at runtime |
+| 3 | [`03_reducer_and_cycles.py`](examples/python/03_reducer_and_cycles.py) | Reducers & cycles — `Annotated` with `operator.add`, looping graphs |
+| 4 | [`04_persistence_checkpointing.py`](examples/python/04_persistence_checkpointing.py) | Checkpointing — `MemorySaver`, thread-based multi-turn conversations |
+| 5 | [`05_human_in_the_loop.py`](examples/python/05_human_in_the_loop.py) | Human-in-the-loop — `interrupt_before`, `update_state`, resume |
+
+### TypeScript (`examples/typescript/`)
+
+| # | File | Concept |
+|---|------|---------|
+| 1 | [`01_simple_graph.ts`](examples/typescript/01_simple_graph.ts) | Sequential graph — `Annotation.Root`, nodes, edges, compile & invoke |
+| 2 | [`02_conditional_edges.ts`](examples/typescript/02_conditional_edges.ts) | Conditional branching — `addConditionalEdges` with a routing function |
+| 3 | [`03_reducer_and_cycles.ts`](examples/typescript/03_reducer_and_cycles.ts) | Reducers & cycles — custom reducer function, looping graphs |
+| 4 | [`04_persistence_checkpointing.ts`](examples/typescript/04_persistence_checkpointing.ts) | Checkpointing — `MemorySaver`, thread-based multi-turn conversations |
+| 5 | [`05_human_in_the_loop.ts`](examples/typescript/05_human_in_the_loop.ts) | Human-in-the-loop — `interruptBefore`, `updateState`, resume |
+
+### Running the Examples
+
+**Python:**
+
+```bash
+pip install langgraph
+cd examples/python
+python 01_simple_graph.py
+```
+
+**TypeScript:**
+
+```bash
+npm install @langchain/langgraph
+cd examples/typescript
+npx ts-node 01_simple_graph.ts
+```
+
+---
+
+## Slide Deck Contents
 
 | Slide | Topic |
 | --- | --- |
