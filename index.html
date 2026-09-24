@@ -11,17 +11,17 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.1/theme/black.min.css">
 <style>
   :root {
-    --amber:  #f5a623;
-    --green:  #4ecb8d;
-    --purple: #a78bfa;
-    --blue:   #60a5fa;
-    --red:    #f87171;
-    --bg:     #0a0a0f;
-    --bg2:    #10101a;
-    --bg3:    #181824;
-    --border: #2a2a3a;
-    --text:   #e8e8f0;
-    --muted:  #8888a8;
+    --amber:  #efba4d;
+    --green:  #9dcba3;
+    --purple: #c2aef4;
+    --blue:   #93c6eb;
+    --red:    #f0846a;
+    --bg:     #17193a;
+    --bg2:    #1c1f44;
+    --bg3:    #21254d;
+    --border: #363c6c;
+    --text:   #efece6;
+    --muted:  #9093ba;
   }
 
   .reveal-viewport { background: var(--bg); }
@@ -37,7 +37,7 @@
   .reveal code { font-family: 'JetBrains Mono', monospace; font-size: .72em; }
   .reveal pre  { box-shadow: none; background: var(--bg3); border: 1px solid var(--border);
                  border-radius: 6px; padding: .3em .5em; margin: .25em 0; }
-  .reveal pre code { font-size: .52em; line-height: 1.35; background: transparent; color: #cdd6f4; }
+  .reveal pre code { font-size: .52em; line-height: 1.35; background: transparent; color: #dedde3; }
 
   /* ── slide chrome ── */
   .slide-hdr {
@@ -72,16 +72,16 @@
   .card.blue  { border-left: 3px solid var(--blue); }
   .card.red   { border-left: 3px solid var(--red); }
   .card h3 { font-size: .64em; margin: 0 0 .12em; }
-  .card p  { font-size: .52em; margin: 0; color: #b8b8d0; }
+  .card p  { font-size: .52em; margin: 0; color: #c3c4dc; }
   .card ul { margin: 0; padding-left: 1em; }
-  .card li { font-size: .52em; color: #b8b8d0; margin-bottom: .02em; }
+  .card li { font-size: .52em; color: #c3c4dc; margin-bottom: .02em; }
 
   /* ── table ── */
   .reveal table { width: 100%; border-collapse: collapse; font-size: .5em; }
   .reveal table th { background: var(--bg3); color: var(--amber); font-weight: 600;
                      padding: .2em .4em; border: 1px solid var(--border); text-align: left; }
-  .reveal table td { padding: .18em .4em; border: 1px solid var(--border); color: #ccc; }
-  .reveal table tr:nth-child(even) td { background: #0e0e18; }
+  .reveal table td { padding: .18em .4em; border: 1px solid var(--border); color: #d4d4e1; }
+  .reveal table tr:nth-child(even) td { background: #1b1d41; }
 
   /* ── accent spans ── */
   .a  { color: var(--amber); font-weight: 600; }
@@ -124,8 +124,8 @@
     padding: .2em .55em; border-radius: 5px; font-size: .9em;
     background: var(--bg3); border: 1px solid var(--border); color: var(--text);
   }
-  .ss-node.active { background: #1a2a1a; border-color: var(--green); color: var(--green); }
-  .ss-node.done   { background: #1a1a2a; border-color: var(--purple); color: var(--purple); }
+  .ss-node.active { background: #333c41; border-color: var(--green); color: var(--green); }
+  .ss-node.done   { background: #232851; border-color: var(--purple); color: var(--purple); }
   .ss-arrow { color: var(--amber); }
   .ss-label { font-size: .8em; color: var(--muted); margin-left: .3em; }
 
@@ -139,7 +139,7 @@
 <div class="slides">
 
 <!-- ═══════════════════════════════ SLIDE 01 — TITLE ═══════════════════════════════ -->
-<section class="title-slide" data-background-color="#0a0a0f">
+<section class="title-slide" data-background-color="#17193a">
   <div style="text-align:left; max-width:820px; margin:0 auto; padding: 1em 0;">
     <div style="font-family:'JetBrains Mono',monospace; font-size:.5em; color:var(--muted); margin-bottom:.4em; letter-spacing:.1em;">
       TECHNICAL REPORT
@@ -153,7 +153,7 @@
       <span class="pill purple">Persistence</span>
       <span class="pill blue">Human-in-the-Loop</span>
     </div>
-    <p style="max-width:620px; color:#a0a0c0; font-size:.56em; line-height:1.5;">
+    <p style="max-width:620px; color:#abadcd; font-size:.56em; line-height:1.5;">
       LangGraph is an MIT-licensed Python (and TypeScript) library for building long-running,
       stateful agent workflows as directed, potentially cyclic graphs — addressing the
       fundamental limitations of linear chain-based LLM orchestration.
@@ -165,7 +165,7 @@
 </section>
 
 <!-- ═══════════════════════════ SLIDE 02 — MOTIVATION ═══════════════════════════ -->
-<section data-background-color="#0a0a0f">
+<section data-background-color="#17193a">
   <div class="slide-hdr">
     <span class="tag">01</span>
     <h2>Motivation — Beyond Linear Chains</h2>
@@ -205,7 +205,7 @@
 </section>
 
 <!-- ═══════════════════════════ SLIDE 03 — ARCHITECTURE OVERVIEW ═══════════════════════════ -->
-<section data-background-color="#0a0a0f">
+<section data-background-color="#17193a">
   <div class="slide-hdr">
     <span class="tag">02</span>
     <h2>Architecture Overview</h2>
@@ -238,50 +238,50 @@
       <svg class="diagram" width="260" height="320" viewBox="0 0 260 320">
         <defs>
           <marker id="ah" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
-            <polygon points="0 0, 8 3, 0 6" fill="#f5a623"/>
+            <polygon points="0 0, 8 3, 0 6" fill="#efba4d"/>
           </marker>
           <marker id="ahg" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
-            <polygon points="0 0, 8 3, 0 6" fill="#4ecb8d"/>
+            <polygon points="0 0, 8 3, 0 6" fill="#9dcba3"/>
           </marker>
           <marker id="ahp" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
-            <polygon points="0 0, 8 3, 0 6" fill="#a78bfa"/>
+            <polygon points="0 0, 8 3, 0 6" fill="#c2aef4"/>
           </marker>
         </defs>
         <!-- State store -->
         <rect x="70" y="10" width="120" height="44" rx="6"
-              fill="#1a1a2a" stroke="#f5a623" stroke-width="1.5"/>
-        <text x="130" y="28" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#f5a623">State</text>
-        <text x="130" y="44" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#888">TypedDict · Reducers</text>
+              fill="#232851" stroke="#efba4d" stroke-width="1.5"/>
+        <text x="130" y="28" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#efba4d">State</text>
+        <text x="130" y="44" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#8a8eb6">TypedDict · Reducers</text>
 
         <!-- Node A -->
         <rect x="20" y="130" width="90" height="44" rx="6"
-              fill="#1a2a1a" stroke="#4ecb8d" stroke-width="1.5"/>
-        <text x="65" y="148" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#4ecb8d">Node A</text>
-        <text x="65" y="164" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#888">LLM / tool call</text>
+              fill="#333c41" stroke="#9dcba3" stroke-width="1.5"/>
+        <text x="65" y="148" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#9dcba3">Node A</text>
+        <text x="65" y="164" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#8a8eb6">LLM / tool call</text>
 
         <!-- Node B -->
         <rect x="150" y="130" width="90" height="44" rx="6"
-              fill="#1a1a2a" stroke="#a78bfa" stroke-width="1.5"/>
-        <text x="195" y="148" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#a78bfa">Node B</text>
-        <text x="195" y="164" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#888">tool / custom</text>
+              fill="#232851" stroke="#c2aef4" stroke-width="1.5"/>
+        <text x="195" y="148" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#c2aef4">Node B</text>
+        <text x="195" y="164" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#8a8eb6">tool / custom</text>
 
         <!-- Conditional router -->
-        <polygon points="130,240 90,270 130,300 170,270" fill="#181824" stroke="#f5a623" stroke-width="1.5"/>
-        <text x="130" y="267" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#f5a623">router?</text>
+        <polygon points="130,240 90,270 130,300 170,270" fill="#21254d" stroke="#efba4d" stroke-width="1.5"/>
+        <text x="130" y="267" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#efba4d">router?</text>
 
         <!-- edges: state → nodes -->
-        <line x1="100" y1="54" x2="65" y2="130" stroke="#f5a623" stroke-width="1" marker-end="url(#ah)" stroke-dasharray="4,3"/>
-        <line x1="160" y1="54" x2="195" y2="130" stroke="#f5a623" stroke-width="1" marker-end="url(#ah)" stroke-dasharray="4,3"/>
+        <line x1="100" y1="54" x2="65" y2="130" stroke="#efba4d" stroke-width="1" marker-end="url(#ah)" stroke-dasharray="4,3"/>
+        <line x1="160" y1="54" x2="195" y2="130" stroke="#efba4d" stroke-width="1" marker-end="url(#ah)" stroke-dasharray="4,3"/>
 
         <!-- nodes → router -->
-        <line x1="65" y1="174" x2="110" y2="240" stroke="#4ecb8d" stroke-width="1.2" marker-end="url(#ahg)"/>
-        <line x1="195" y1="174" x2="150" y2="240" stroke="#a78bfa" stroke-width="1.2" marker-end="url(#ahp)"/>
+        <line x1="65" y1="174" x2="110" y2="240" stroke="#9dcba3" stroke-width="1.2" marker-end="url(#ahg)"/>
+        <line x1="195" y1="174" x2="150" y2="240" stroke="#c2aef4" stroke-width="1.2" marker-end="url(#ahp)"/>
 
         <!-- labels -->
-        <text x="38" y="118" font-family="DM Sans" font-size="8" fill="#555">read state</text>
-        <text x="165" y="118" font-family="DM Sans" font-size="8" fill="#555">read state</text>
-        <text x="60" y="220" font-family="DM Sans" font-size="8" fill="#555">direct edge</text>
-        <text x="152" y="220" font-family="DM Sans" font-size="8" fill="#555">cond. edge</text>
+        <text x="38" y="118" font-family="DM Sans" font-size="8" fill="#4f5484">read state</text>
+        <text x="165" y="118" font-family="DM Sans" font-size="8" fill="#4f5484">read state</text>
+        <text x="60" y="220" font-family="DM Sans" font-size="8" fill="#4f5484">direct edge</text>
+        <text x="152" y="220" font-family="DM Sans" font-size="8" fill="#4f5484">cond. edge</text>
       </svg>
     </div>
   </div>
@@ -289,7 +289,7 @@
 </section>
 
 <!-- ═══════════════════════════ SLIDE 04 — STATE IN DEPTH ═══════════════════════════ -->
-<section data-background-color="#0a0a0f">
+<section data-background-color="#17193a">
   <div class="slide-hdr">
     <span class="tag">03</span>
     <h2>State — The Shared Memory Model</h2>
@@ -336,7 +336,7 @@ class AgentState(TypedDict):
 </section>
 
 <!-- ═══════════════════════════ SLIDE 05 — NODES ═══════════════════════════ -->
-<section data-background-color="#0a0a0f">
+<section data-background-color="#17193a">
   <div class="slide-hdr">
     <span class="tag">04</span>
     <h2>Nodes — Units of Computation</h2>
@@ -395,7 +395,7 @@ app = graph.compile()</code></pre>
 </section>
 
 <!-- ═══════════════════════════ SLIDE 06 — EDGES & EXECUTION MODEL ═══════════════════════════ -->
-<section data-background-color="#0a0a0f">
+<section data-background-color="#17193a">
   <div class="slide-hdr">
     <span class="tag">05</span>
     <h2>Edges &amp; the Pregel Execution Model</h2>
@@ -452,44 +452,44 @@ app = graph.compile()</code></pre>
       <svg class="diagram" width="210" height="280" viewBox="0 0 210 280">
         <defs>
           <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
-            <polygon points="0 0, 8 3, 0 6" fill="#f5a623"/>
+            <polygon points="0 0, 8 3, 0 6" fill="#efba4d"/>
           </marker>
         </defs>
         <!-- START -->
-        <circle cx="105" cy="22" r="16" fill="#10101a" stroke="#4ecb8d" stroke-width="1.5"/>
-        <text x="105" y="26" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#4ecb8d">START</text>
+        <circle cx="105" cy="22" r="16" fill="#1c1f44" stroke="#9dcba3" stroke-width="1.5"/>
+        <text x="105" y="26" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#9dcba3">START</text>
 
         <!-- reason -->
-        <rect x="50" y="70" width="110" height="38" rx="6" fill="#1a2a1a" stroke="#4ecb8d" stroke-width="1.5"/>
-        <text x="105" y="86" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#4ecb8d">reason</text>
-        <text x="105" y="100" text-anchor="middle" font-family="DM Sans" font-size="8.5" fill="#888">LLM call</text>
+        <rect x="50" y="70" width="110" height="38" rx="6" fill="#333c41" stroke="#9dcba3" stroke-width="1.5"/>
+        <text x="105" y="86" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#9dcba3">reason</text>
+        <text x="105" y="100" text-anchor="middle" font-family="DM Sans" font-size="8.5" fill="#8a8eb6">LLM call</text>
 
         <!-- diamond router -->
-        <polygon points="105,148 74,168 105,188 136,168" fill="#181824" stroke="#f5a623" stroke-width="1.5"/>
-        <text x="105" y="165" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#f5a623">should_</text>
-        <text x="105" y="178" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#f5a623">continue?</text>
+        <polygon points="105,148 74,168 105,188 136,168" fill="#21254d" stroke="#efba4d" stroke-width="1.5"/>
+        <text x="105" y="165" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#efba4d">should_</text>
+        <text x="105" y="178" text-anchor="middle" font-family="JetBrains Mono" font-size="8" fill="#efba4d">continue?</text>
 
         <!-- act node -->
-        <rect x="50" y="215" width="110" height="38" rx="6" fill="#1a1a2a" stroke="#a78bfa" stroke-width="1.5"/>
-        <text x="105" y="231" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#a78bfa">act</text>
-        <text x="105" y="245" text-anchor="middle" font-family="DM Sans" font-size="8.5" fill="#888">ToolNode</text>
+        <rect x="50" y="215" width="110" height="38" rx="6" fill="#232851" stroke="#c2aef4" stroke-width="1.5"/>
+        <text x="105" y="231" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#c2aef4">act</text>
+        <text x="105" y="245" text-anchor="middle" font-family="DM Sans" font-size="8.5" fill="#8a8eb6">ToolNode</text>
 
         <!-- END -->
-        <circle cx="184" cy="168" r="16" fill="#10101a" stroke="#f87171" stroke-width="1.5"/>
-        <text x="184" y="172" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#f87171">END</text>
+        <circle cx="184" cy="168" r="16" fill="#1c1f44" stroke="#f0846a" stroke-width="1.5"/>
+        <text x="184" y="172" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#f0846a">END</text>
 
         <!-- arrows -->
-        <line x1="105" y1="38" x2="105" y2="70" stroke="#f5a623" stroke-width="1.3" marker-end="url(#arr)"/>
-        <line x1="105" y1="108" x2="105" y2="148" stroke="#f5a623" stroke-width="1.3" marker-end="url(#arr)"/>
-        <line x1="105" y1="188" x2="105" y2="215" stroke="#a78bfa" stroke-width="1.3" marker-end="url(#arr)"/>
+        <line x1="105" y1="38" x2="105" y2="70" stroke="#efba4d" stroke-width="1.3" marker-end="url(#arr)"/>
+        <line x1="105" y1="108" x2="105" y2="148" stroke="#efba4d" stroke-width="1.3" marker-end="url(#arr)"/>
+        <line x1="105" y1="188" x2="105" y2="215" stroke="#c2aef4" stroke-width="1.3" marker-end="url(#arr)"/>
         <!-- act back to reason (cycle) -->
-        <path d="M50,234 Q10,200 10,140 Q10,80 50,82" stroke="#4ecb8d" stroke-width="1.2"
+        <path d="M50,234 Q10,200 10,140 Q10,80 50,82" stroke="#9dcba3" stroke-width="1.2"
               fill="none" marker-end="url(#arr)"/>
         <!-- router to END -->
-        <line x1="136" y1="168" x2="168" y2="168" stroke="#f87171" stroke-width="1.2" marker-end="url(#arr)"/>
+        <line x1="136" y1="168" x2="168" y2="168" stroke="#f0846a" stroke-width="1.2" marker-end="url(#arr)"/>
         <!-- labels -->
-        <text x="6" y="145" font-family="DM Sans" font-size="7.5" fill="#4ecb8d" transform="rotate(-90,6,145)">loop</text>
-        <text x="152" y="162" font-family="DM Sans" font-size="7.5" fill="#f87171">done</text>
+        <text x="6" y="145" font-family="DM Sans" font-size="7.5" fill="#9dcba3" transform="rotate(-90,6,145)">loop</text>
+        <text x="152" y="162" font-family="DM Sans" font-size="7.5" fill="#f0846a">done</text>
       </svg>
     </div>
   </div>
@@ -497,7 +497,7 @@ app = graph.compile()</code></pre>
 </section>
 
 <!-- ═══════════════════════════ SLIDE 07 — COMPILATION ═══════════════════════════ -->
-<section data-background-color="#0a0a0f">
+<section data-background-color="#17193a">
   <div class="slide-hdr">
     <span class="tag">06</span>
     <h2>Graph Compilation</h2>
@@ -550,7 +550,7 @@ app = graph.compile()</code></pre>
 </section>
 
 <!-- ═══════════════════════════ SLIDE 08 — PERSISTENCE / CHECKPOINTING ═══════════════════════════ -->
-<section data-background-color="#0a0a0f">
+<section data-background-color="#17193a">
   <div class="slide-hdr">
     <span class="tag">07</span>
     <h2>Persistence &amp; Checkpointing</h2>
@@ -601,7 +601,7 @@ app = graph.compile()</code></pre>
 </section>
 
 <!-- ═══════════════════════════ SLIDE 09 — HUMAN-IN-THE-LOOP ═══════════════════════════ -->
-<section data-background-color="#0a0a0f">
+<section data-background-color="#17193a">
   <div class="slide-hdr">
     <span class="tag">08</span>
     <h2>Human-in-the-Loop</h2>
@@ -632,47 +632,47 @@ app.invoke(
       <svg class="diagram" width="200" height="360" viewBox="0 0 200 360">
         <defs>
           <marker id="arr2" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
-            <polygon points="0 0, 8 3, 0 6" fill="#f5a623"/>
+            <polygon points="0 0, 8 3, 0 6" fill="#efba4d"/>
           </marker>
         </defs>
         <!-- nodes top to bottom -->
-        <rect x="55" y="10" width="90" height="34" rx="5" fill="#1a2a1a" stroke="#4ecb8d" stroke-width="1.5"/>
-        <text x="100" y="32" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="#4ecb8d">plan_task</text>
+        <rect x="55" y="10" width="90" height="34" rx="5" fill="#333c41" stroke="#9dcba3" stroke-width="1.5"/>
+        <text x="100" y="32" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="#9dcba3">plan_task</text>
 
         <!-- pause marker -->
-        <rect x="55" y="66" width="90" height="34" rx="5" fill="#2a1a0a" stroke="#f5a623" stroke-width="1.5" stroke-dasharray="5,3"/>
-        <text x="100" y="82" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#f5a623">⏸ interrupt</text>
-        <text x="100" y="95" text-anchor="middle" font-family="DM Sans" font-size="8" fill="#888">awaiting human</text>
+        <rect x="55" y="66" width="90" height="34" rx="5" fill="#332e2c" stroke="#efba4d" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <text x="100" y="82" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#efba4d">⏸ interrupt</text>
+        <text x="100" y="95" text-anchor="middle" font-family="DM Sans" font-size="8" fill="#8a8eb6">awaiting human</text>
 
         <!-- human actor -->
-        <circle cx="100" cy="136" r="14" fill="#181824" stroke="#60a5fa" stroke-width="1.5"/>
-        <text x="100" y="140" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#60a5fa">👤</text>
-        <text x="100" y="162" text-anchor="middle" font-family="DM Sans" font-size="8" fill="#60a5fa">approve / edit</text>
+        <circle cx="100" cy="136" r="14" fill="#21254d" stroke="#93c6eb" stroke-width="1.5"/>
+        <text x="100" y="140" text-anchor="middle" font-family="DM Sans" font-size="9" fill="#93c6eb">👤</text>
+        <text x="100" y="162" text-anchor="middle" font-family="DM Sans" font-size="8" fill="#93c6eb">approve / edit</text>
 
         <!-- resume -->
-        <rect x="55" y="178" width="90" height="34" rx="5" fill="#1a1a2a" stroke="#a78bfa" stroke-width="1.5"/>
-        <text x="100" y="194" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#a78bfa">Command(</text>
-        <text x="100" y="207" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#a78bfa">resume=…)</text>
+        <rect x="55" y="178" width="90" height="34" rx="5" fill="#232851" stroke="#c2aef4" stroke-width="1.5"/>
+        <text x="100" y="194" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#c2aef4">Command(</text>
+        <text x="100" y="207" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#c2aef4">resume=…)</text>
 
         <!-- execute_task -->
-        <rect x="55" y="232" width="90" height="34" rx="5" fill="#1a2a1a" stroke="#4ecb8d" stroke-width="1.5"/>
-        <text x="100" y="254" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="#4ecb8d">execute_task</text>
+        <rect x="55" y="232" width="90" height="34" rx="5" fill="#333c41" stroke="#9dcba3" stroke-width="1.5"/>
+        <text x="100" y="254" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="#9dcba3">execute_task</text>
 
         <!-- end -->
-        <circle cx="100" cy="316" r="18" fill="#10101a" stroke="#f87171" stroke-width="1.5"/>
-        <text x="100" y="320" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#f87171">END</text>
+        <circle cx="100" cy="316" r="18" fill="#1c1f44" stroke="#f0846a" stroke-width="1.5"/>
+        <text x="100" y="320" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#f0846a">END</text>
 
         <!-- arrows -->
-        <line x1="100" y1="44" x2="100" y2="66" stroke="#f5a623" stroke-width="1.2" marker-end="url(#arr2)"/>
-        <line x1="100" y1="100" x2="100" y2="122" stroke="#60a5fa" stroke-width="1.2" marker-end="url(#arr2)" stroke-dasharray="4,2"/>
-        <line x1="100" y1="150" x2="100" y2="178" stroke="#60a5fa" stroke-width="1.2" marker-end="url(#arr2)" stroke-dasharray="4,2"/>
-        <line x1="100" y1="212" x2="100" y2="232" stroke="#f5a623" stroke-width="1.2" marker-end="url(#arr2)"/>
-        <line x1="100" y1="266" x2="100" y2="298" stroke="#f5a623" stroke-width="1.2" marker-end="url(#arr2)"/>
+        <line x1="100" y1="44" x2="100" y2="66" stroke="#efba4d" stroke-width="1.2" marker-end="url(#arr2)"/>
+        <line x1="100" y1="100" x2="100" y2="122" stroke="#93c6eb" stroke-width="1.2" marker-end="url(#arr2)" stroke-dasharray="4,2"/>
+        <line x1="100" y1="150" x2="100" y2="178" stroke="#93c6eb" stroke-width="1.2" marker-end="url(#arr2)" stroke-dasharray="4,2"/>
+        <line x1="100" y1="212" x2="100" y2="232" stroke="#efba4d" stroke-width="1.2" marker-end="url(#arr2)"/>
+        <line x1="100" y1="266" x2="100" y2="298" stroke="#efba4d" stroke-width="1.2" marker-end="url(#arr2)"/>
 
         <!-- checkpoint annotation -->
-        <text x="152" y="85" font-family="DM Sans" font-size="7.5" fill="#f5a623">checkpoint</text>
-        <text x="152" y="95" font-family="DM Sans" font-size="7.5" fill="#f5a623">persisted</text>
-        <line x1="148" y1="83" x2="145" y2="83" stroke="#f5a623" stroke-width="0.8"/>
+        <text x="152" y="85" font-family="DM Sans" font-size="7.5" fill="#efba4d">checkpoint</text>
+        <text x="152" y="95" font-family="DM Sans" font-size="7.5" fill="#efba4d">persisted</text>
+        <line x1="148" y1="83" x2="145" y2="83" stroke="#efba4d" stroke-width="0.8"/>
       </svg>
     </div>
   </div>
@@ -680,7 +680,7 @@ app.invoke(
 </section>
 
 <!-- ═══════════════════════════ SLIDE 10 — MULTI-AGENT PATTERNS ═══════════════════════════ -->
-<section data-background-color="#0a0a0f">
+<section data-background-color="#17193a">
   <div class="slide-hdr">
     <span class="tag">09</span>
     <h2>Multi-Agent Patterns</h2>
@@ -728,7 +728,7 @@ worker → aggregate</code></pre>
 </section>
 
 <!-- ═══════════════════════════ SLIDE 11 — STREAMING ═══════════════════════════ -->
-<section data-background-color="#0a0a0f">
+<section data-background-color="#17193a">
   <div class="slide-hdr">
     <span class="tag">10</span>
     <h2>Streaming</h2>
@@ -777,7 +777,7 @@ worker → aggregate</code></pre>
 </section>
 
 <!-- ═══════════════════════════ SLIDE 12 — DEPLOYMENT ═══════════════════════════ -->
-<section data-background-color="#0a0a0f">
+<section data-background-color="#17193a">
   <div class="slide-hdr">
     <span class="tag">11</span>
     <h2>Deployment — LangGraph Platform</h2>
@@ -828,7 +828,7 @@ langgraph up --port 8000</code></pre>
 </section>
 
 <!-- ═══════════════════════════ SLIDE 13 — COMPARISON ═══════════════════════════ -->
-<section data-background-color="#0a0a0f">
+<section data-background-color="#17193a">
   <div class="slide-hdr">
     <span class="tag">12</span>
     <h2>Framework Comparison</h2>
@@ -916,7 +916,7 @@ langgraph up --port 8000</code></pre>
 </section>
 
 <!-- ═══════════════════════════ SLIDE 14 — TRADE-OFFS ═══════════════════════════ -->
-<section data-background-color="#0a0a0f">
+<section data-background-color="#17193a">
   <div class="slide-hdr">
     <span class="tag">13</span>
     <h2>Strengths &amp; Trade-Offs</h2>
@@ -974,7 +974,7 @@ langgraph up --port 8000</code></pre>
 </section>
 
 <!-- ═══════════════════════════ SLIDE 15 — WORKED EXAMPLE ═══════════════════════════ -->
-<section data-background-color="#0a0a0f">
+<section data-background-color="#17193a">
   <div class="slide-hdr">
     <span class="tag">14</span>
     <h2>Worked Example — ReAct Research Agent</h2>
@@ -1049,7 +1049,7 @@ app.invoke(Command(resume=True), config=cfg)</code></pre>
 </section>
 
 <!-- ═══════════════════════════ SLIDE 16 — TYPESCRIPT: INTRO ═══════════════════════════ -->
-<section data-background-color="#0a0a0f">
+<section data-background-color="#17193a">
   <div class="slide-hdr">
     <span class="tag">15</span>
     <h2>LangGraph.js — TypeScript Support</h2>
@@ -1121,7 +1121,7 @@ function shouldContinue(
 </section>
 
 <!-- ═══════════════════════════ SLIDE 17 — TYPESCRIPT: ADVANCED ═══════════════════════════ -->
-<section data-background-color="#0a0a0f">
+<section data-background-color="#17193a">
   <div class="slide-hdr">
     <span class="tag">16</span>
     <h2>TypeScript — Streaming, Persistence &amp; Deployment</h2>
@@ -1193,7 +1193,7 @@ const result = await agent.invoke({
 </section>
 
 <!-- ═══════════════════════════ SLIDE 18 — MORE CODE EXAMPLES ═══════════════════════════ -->
-<section data-background-color="#0a0a0f">
+<section data-background-color="#17193a">
   <div class="slide-hdr">
     <span class="tag">17</span>
     <h2>Code Examples — Advanced Patterns</h2>
@@ -1269,7 +1269,7 @@ def risky_action(state: State) -> dict:
 </section>
 
 <!-- ═══════════════════════════ SLIDE 19 — SUMMARY ═══════════════════════════ -->
-<section data-background-color="#0a0a0f">
+<section data-background-color="#17193a">
   <div class="slide-hdr">
     <span class="tag">18</span>
     <h2>Summary</h2>
@@ -1304,7 +1304,7 @@ def risky_action(state: State) -> dict:
     </div>
     <div>
       <h3>References</h3>
-      <p style="font-size:.48em; color:#8888a8; line-height:1.5;">
+      <p style="font-size:.48em; color:#9093ba; line-height:1.5;">
         LangGraph Documentation — <em>docs.langchain.com</em><br>
         LangGraph GitHub — <em>github.com/langchain-ai/langgraph</em><br>
         Malewicz et al., "Pregel: A System for Large-Scale Graph Processing," SIGMOD 2010<br>
