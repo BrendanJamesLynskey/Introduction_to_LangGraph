@@ -111,7 +111,7 @@ npx ts-node 01_simple_graph.ts
 
 ## Technology
 
-[Reveal.js 4.6](https://revealjs.com) · [highlight.js](https://highlightjs.org) (Monokai) · Playfair Display + DM Sans + JetBrains Mono
+[Reveal.js 4.6](https://revealjs.com) · [highlight.js](https://highlightjs.org) (Monokai) · Outfit + Plus Jakarta Sans + Fira Code
 
 ## References
 
